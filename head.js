@@ -6,7 +6,10 @@ let assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(2, 4);
-assertEqual("khaled", "khaled");
+function head(array, other) {
+  return array[0];
+}
+assertEqual(head([5,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(head([]), 5)
+assertEqual(head([6]), 5)
