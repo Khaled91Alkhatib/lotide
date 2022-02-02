@@ -26,6 +26,6 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
-assertArraysEqual(letterPositions("lighthouselabs").l, [0, 10]);
+assertArraysEqual(letterPositions("lighthouselabs").i, [1]);
 
 // console.log(letterPositions("lighthouselabs"))
