@@ -1,0 +1,2 @@
+const eqObjects = require("../eqOjects");
+
