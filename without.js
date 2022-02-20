@@ -1,14 +1,14 @@
-const eqArrays = require("./eqArrays");
 const assertArraysEqual = require("./assertArraysEqual");
+
 
 function without(source, itemsToRemove) {
   let result = [];
-  for(let i = 0; i < source.length; i++) {
-    if(source[i] !== itemsToRemove[i]) {
-      result.push(source[i]);
+  for(const element of source){
+    if(itemsToRemove.includes(element) === false) {
+      result.push(element);
     }
   }
-  return result;
+  return result
 }
 
 module.exports = without;

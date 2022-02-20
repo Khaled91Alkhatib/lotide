@@ -1,13 +1,17 @@
 const assertEqual = require("./assertEqual");
 
 let tail = function(array) {
-  let tailArray = [];
-  for(let i = 0; i < array.length; i++) {
-    tailArray = array[i];
-  }
-  return tailArray;
+  return array.slice(1);
+
+  // Another approach can be:
+  // let result = [];
+  // let counter = 0
+  // for(let i = 1; i < array.length; i++) {
+  //   if(result[counter] = array[i]) {
+  //     counter ++
+  //   }
+  // }
+  // return result
 };
-// tail([1, 2, 3]);
-// console.log(tail([1, 2, 3]))
 
 module.exports = tail;
